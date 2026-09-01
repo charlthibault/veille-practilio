@@ -1,0 +1,35 @@
+{
+  "_doc": [
+    "Liste d'exclusion : ce qui ne doit PAS arriver au tri du prompt.",
+    "Le tri sérieux est fait par prompts/rapport-securite.md, qui lit l'article.",
+    "Ce fichier ne sert qu'à retirer du bruit de masse identifié nommément.",
+    "",
+    "Une entrée est écartée si `motif` (expression régulière, insensible à la",
+    "casse) est trouvé dans son titre ET si `source` est absent ou apparaît",
+    "dans le nom de sa source.",
+    "",
+    "Règle d'or : en cas de doute, ne pas exclure. Un article écarté ici est",
+    "invisible — il n'apparaîtra pas même dans la section « Articles écartés »",
+    "du bulletin. Un article de trop, lui, se règle en une ligne au tri.",
+    "",
+    "Chaque règle est comptée dans output/candidates.json, section `excluded` :",
+    "c'est ce qui permet de voir qu'une règle dérape ou ne sert plus."
+  ],
+  "regles": [
+    {
+      "motif": "^Chromium:",
+      "source": "MSRC",
+      "raison": "republication par MSRC d'un CVE Chrome amont"
+    },
+    {
+      "motif": "Microsoft Edge",
+      "source": "MSRC",
+      "raison": "CVE navigateur, sans lien avec le périmètre"
+    },
+    {
+      "motif": "^DSA-[0-9]+-[0-9]+ chromium ",
+      "source": "Debian",
+      "raison": "mise à jour navigateur, sans lien avec le périmètre"
+    }
+  ]
+}
