@@ -1,19 +1,19 @@
 {
   "_doc": [
-    "Liste d'exclusion : ce qui ne doit PAS arriver au tri du prompt.",
-    "Le tri sérieux est fait par prompts/rapport-securite.md, qui lit l'article.",
-    "Ce fichier ne sert qu'à retirer du bruit de masse identifié nommément.",
+    "Exclusion list: what must NOT reach the prompt triage.",
+    "The real triage is done by prompts/rapport-securite.md, which reads the article.",
+    "This file only removes bulk noise identified by name.",
     "",
-    "Une entrée est écartée si `motif` (expression régulière, insensible à la",
-    "casse) est trouvé dans son titre ET si `source` est absent ou apparaît",
-    "dans le nom de sa source.",
+    "An entry is dropped if `motif` (regular expression, case-insensitive) is",
+    "found in its title AND if `source` is absent or appears in the name of its",
+    "source.",
     "",
-    "Règle d'or : en cas de doute, ne pas exclure. Un article écarté ici est",
-    "invisible — il n'apparaîtra pas même dans la section « Articles écartés »",
-    "du bulletin. Un article de trop, lui, se règle en une ligne au tri.",
+    "Golden rule: when in doubt, do not exclude. An article dropped here is",
+    "invisible — it will not even appear in the bulletin's « Articles écartés »",
+    "section. One article too many, on the other hand, is settled in one line at triage.",
     "",
-    "Chaque règle est comptée dans output/candidates.json, section `excluded` :",
-    "c'est ce qui permet de voir qu'une règle dérape ou ne sert plus."
+    "Every rule is counted in output/candidates.json, section `excluded`:",
+    "that is what shows a rule going off the rails or no longer earning its place."
   ],
   "regles": [
     {

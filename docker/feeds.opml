@@ -2,17 +2,24 @@
 <opml xmlns:frss="https://freshrss.org/opml" version="2.0">
   <head>
     <title>FreshRSS</title>
-    <dateCreated>Mon, 31 Aug 2026 18:45:50 +0200</dateCreated>
+    <dateCreated>Wed, 02 Sep 2026 08:28:44 +0200</dateCreated>
   </head>
   <body>
-    <outline text="Uncategorized">
+    <outline text="Agences et Organismes étatiques">
       <outline text="Agence du Numérique en Santé - La transformation numérique de notre système de santé commence ici, pour vous et avec vous !" type="rss" xmlUrl="https://esante.gouv.fr/rss.xml" htmlUrl="https://esante.gouv.fr/"/>
-      <outline text="Debian Security" type="rss" xmlUrl="https://www.debian.org/security/dsa" htmlUrl="https://www.debian.org/security/dsa.rdf" description="Debian Security Advisories"/>
-      <outline text="FreshRSS releases" type="rss" xmlUrl="https://github.com/FreshRSS/FreshRSS/releases.atom" htmlUrl="https://github.com/FreshRSS/FreshRSS/" description="FreshRSS releases @ GitHub"/>
-      <outline text="Kubernetes Vulnerability Announcements - CVE Feed" type="rss" xmlUrl="https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml" htmlUrl="https://kubernetes.io/docs/reference/issues-security/official-cve-feed/" description="Auto-refreshing official CVE feed for Kubernetes repository"/>
       <outline text="Les actualités" type="rss" xmlUrl="https://cyber.gouv.fr/actualites/rss/" htmlUrl="http://cyber.sites.beta.gouv.fr/actualites/" description="Aucun article trouvé. Voir tous les articles […]"/>
+    </outline>
+    <outline text="CERT(s)">
+      <outline text="CERT-FR" type="rss" xmlUrl="https://www.cert.ssi.gouv.fr/feed/" htmlUrl="https://www.cert.ssi.gouv.fr/feed/" description="Centre gouvernemental de veille, d'alerte et de réponse aux attaques informatiques."/>
+    </outline>
+    <outline text="CVE">
+      <outline text="Debian Security" type="rss" xmlUrl="https://www.debian.org/security/dsa" htmlUrl="https://www.debian.org/security/dsa.rdf" description="Debian Security Advisories"/>
+      <outline text="Kubernetes Vulnerability Announcements - CVE Feed" type="rss" xmlUrl="https://kubernetes.io/docs/reference/issues-security/official-cve-feed/feed.xml" htmlUrl="https://kubernetes.io/docs/reference/issues-security/official-cve-feed/" description="Auto-refreshing official CVE feed for Kubernetes repository"/>
       <outline text="MSRC Security Update Guide" type="rss" xmlUrl="https://api.msrc.microsoft.com/update-guide/rss" htmlUrl="https://msrc.microsoft.com/update-guide/" frss:unicityCriteria="sha1:link_published"/>
+    </outline>
+    <outline text="Forums">
       <outline text="The Hacker News" type="rss" xmlUrl="https://feeds.feedburner.com/TheHackersNews" htmlUrl="https://thehackernews.com/" description="Most trusted, widely-read independent cybersecurity news source for everyone; supported by hackers and IT professionals — Send TIPs to admin@thehackernews.com"/>
     </outline>
+    <outline text="Uncategorized"/>
   </body>
 </opml>
